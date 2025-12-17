@@ -19,11 +19,33 @@ This access is **read-only**. We do not modify, delete, or write any data to you
 
 ### What We Do NOT Collect
 
-- Email content or attachments
 - Keystrokes or screen captures
-- File contents or documents
+- File contents or documents (except contract attachments when explicitly enabled)
 - Passwords or payment information
 - Audio, video, or webcam data
+- Personal email content unrelated to software contracts
+
+### Email Scanning for Contract Management
+
+When enabled by your organization, we scan emails to automatically detect and extract software contract information:
+
+**What we access:**
+- Email metadata (sender, recipient, subject, date)
+- Attachments that appear to be contracts (PDFs, documents)
+- Contract-related keywords to identify renewal dates, pricing, and terms
+
+**What we extract:**
+- Vendor names and contract terms
+- Renewl dates and pricing information
+- License quantities and agreement details
+
+**What we DO NOT do:**
+- Read personal or non-contract emails
+- Store full email body content
+- Access emails outside configured mailboxes
+- Share email data with third parties
+
+Email scanning requires explicit administrator consent and can be disabled at any time.
 
 ---
 
@@ -37,13 +59,15 @@ This access is **read-only**. We do not modify, delete, or write any data to you
 
 **Via Identity Provider Integration:** When your administrator connects Microsoft Entra ID or Google Workspace via OAuth consent flow.
 
+**Via Email Integration:** When enabled, we connect to Microsoft 365 or Google Workspace email to scan for software contracts and renewal information. Access is limited to contract-related emails only.
+
 **From your employer:** If you use License Logic under a corporate account, limited user identifiers may be shared with us.
 
 ---
 
 ## Data Governance and Security
 
-**Where Data Goes**: All customer data collected by our agents and integrations is encrypted and transmitted securely to Amazon Web Services (AWS), located in the United State.s
+**Where Data Goes**: All customer data collected by our agents and integrations is encrypted and transmitted securely to Amazon Web Services (AWS), located in the United States.
 
 **Identity Provider Tokens:** OAuth access and refresh tokens from Entra ID and Google Workspace are encrypted with AES-256-GCM before storage.
 
@@ -87,7 +111,7 @@ Contact legal@licenselogic.co for DPA requests.
 
 ## Contact Us
 
-IF you have questions about this Policy or how we handle your data:
+If you have questions about this Policy or how we handle your data:
 
 **General Support:** help@licenselogic.co
 **Privacy Requests:** privacy@licenselogic.co
