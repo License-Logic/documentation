@@ -13,7 +13,7 @@
 | **Browser History** | Identify SaaS applications in use | URL, page title, timestamp |
 | **User Identity** | Associate usage with employees | Email (via Entra/AD lookup or manual) |
 
-** What We DON'T Collect:**
+**What We DON'T Collect:**
 - Keystrokes or screen captures
 - File contents or document data
 - Personal browsing or non-work accounts
